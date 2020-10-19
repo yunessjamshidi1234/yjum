@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageDigikala"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/digikala"/>
+
+    <Button
+        android:id="@+id/emailKon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   info@digikala.com   "
+        android:textColor="#ffff"
+        android:drawableRight="@drawable/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/imageDigikala"
+        android:background="#4F636A"/>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        تماس با دیجی کالا            "
+        android:textColor="#ffff"
+        android:drawableRight="@drawable/headset"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailKon"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="#4F636A"/>
+    <Button
+        android:id="@+id/problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   گزارشات مشکلات اپلیکیشن   "
+        android:textColor="#ffff"
+        android:drawableRight="@drawable/pest"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/call"
+        android:paddingRight="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#635151"/>
+    <ImageView
+        android:id="@+id/iconDigikala"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/unnamed"
+        android:layout_below="@id/problem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نسخه ۱.۹.۳"
+        android:layout_below="@id/problem"
+        android:layout_marginLeft="85dp"
+        android:textSize="14sp"
+        android:layout_marginTop="27dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="دیجی کالا"
+        android:layout_toEndOf="@id/iconDigikala"
+        android:layout_below="@id/problem"
+        android:layout_marginLeft="50dp"
+        android:textSize="14sp"
+        android:layout_marginTop="27dp"/>
+    <TextView
+        android:id="@+id/mahfoze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="کلیه حقوق نزد دیجی کالا محفوظ است"
+        android:layout_below="@id/iconDigikala"/>
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#2828C6"
+        android:text="شرایط استفاده"
+        android:layout_below="@id/mahfoze"
+        android:layout_marginLeft="85dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#2828C6"
+        android:text="حریم خصوصی"
+        android:layout_below="@id/mahfoze"
+        android:layout_toEndOf="@id/how"
+        android:layout_marginLeft="100dp"/>
+
+
+</RelativeLayout>
