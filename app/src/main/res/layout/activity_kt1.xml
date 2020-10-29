@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".KtActivity1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اطلاعات شخصی"
+        android:layout_marginTop="-70dp"
+        android:textSize="30dp"
+        android:textColor="#FF0000"/>
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please enter your name"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/editTextFname"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please enter your  lastname"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please enter your National Code"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please enter your  age"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/country"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please enter your city"
+        android:layout_marginHorizontal="20dp"/>
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="click"
+        android:textColor="#ffff"
+        android:background="#4CAF50"/>
+
+
+</LinearLayout>

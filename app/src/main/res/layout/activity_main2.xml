@@ -13,31 +13,33 @@ tools:context=".MainActivity2">
         android:layout_centerHorizontal="true"
         android:src="@drawable/digikala"/>
 
-    <Button
+    <TextView
         android:id="@+id/emailKon"
-        android:layout_width="wrap_content"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:text="   info@digikala.com   "
-        android:textColor="#ffff"
+        android:layout_centerInParent="true"
+        android:background="@color/lightSormee"
         android:drawableRight="@drawable/email"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
         android:paddingRight="10dp"
-        android:layout_below="@+id/imageDigikala"
-        android:background="#4F636A"/>
+        android:paddingBottom="12dp"
+        android:text="@string/information"
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="        تماس با دیجی کالا            "
+        android:paddingLeft="50dp"
+        android:text="      تماس با دیجی کالا"
         android:textColor="#ffff"
         android:drawableRight="@drawable/headset"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/emailKon"
         android:paddingRight="10dp"
         android:layout_marginTop="30dp"
-        android:background="#4F636A"/>
+        android:background="@color/lightSormee"/>
     <Button
         android:id="@+id/problem"
         android:layout_width="wrap_content"
@@ -86,20 +88,20 @@ tools:context=".MainActivity2">
         android:id="@+id/how"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30sp"
         android:textColor="#2828C6"
         android:text="شرایط استفاده"
         android:layout_below="@id/mahfoze"
-        android:layout_marginLeft="85dp"/>
+        android:layout_marginLeft="65sp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30sp"
         android:textColor="#2828C6"
         android:text="حریم خصوصی"
         android:layout_below="@id/mahfoze"
         android:layout_toEndOf="@id/how"
-        android:layout_marginLeft="100dp"/>
+        android:layout_marginLeft="100sp"/>
 
 
 </RelativeLayout>
