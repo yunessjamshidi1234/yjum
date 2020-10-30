@@ -12,6 +12,14 @@
         android:layout_height="200dp"
         android:id="@+id/cameraPicture"
         android:src="@drawable/ic_baseline_camera_24"/>
+    <TextView
+        android:id="@+id/halat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginVertical="20dp"
+        android:text="Your random number is"
+        android:textColor="#FF0000"/>
     <Button
         android:layout_width="150dp"
         android:layout_height="70dp"

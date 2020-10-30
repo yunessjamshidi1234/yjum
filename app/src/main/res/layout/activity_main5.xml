@@ -15,29 +15,49 @@
         android:textColor="#5BA504"
         android:textSize="40sp"/>
     <TextView
+        android:layout_gravity="start"
+        android:id="@+id/dtName"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#E37171"/>
+        android:textColor="#E37171"
+        android:textSize="18sp"/>
     <TextView
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:id="@+id/dtFname"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#E37171"/>
+        android:textColor="#E37171"
+        android:textSize="18sp"/>
     <TextView
+        android:layout_gravity="start"
+        android:id="@+id/dtCode"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#E37171"/>
+        android:textColor="#E37171"
+        android:textSize="18sp"/>
     <TextView
+        android:layout_gravity="start"
+        android:id="@+id/dtAge"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#E37171"/>
+        android:textColor="#E37171"
+        android:textSize="18sp"/>
     <TextView
+        android:layout_gravity="start"
+        android:id="@+id/dtCountry"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#E37171"/>
+        android:textColor="#E37171"
+        android:textSize="18sp"/>
 
 </LinearLayout>
