@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".searshActivity">
+    <EditText
+        android:id="@+id/edtBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="لطفا آدرس خود را وارد کنید"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="300dp"/>
+    <Button
+        android:id="@+id/btnsearching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/edtBrowser"
+        app:layout_constraintBottom_toBottomOf="@id/edtBrowser"
+        android:text="جستجو"
+        android:textColor="#ffffff"
+        android:background="#4CAF50"
+        android:drawableEnd="@drawable/search"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

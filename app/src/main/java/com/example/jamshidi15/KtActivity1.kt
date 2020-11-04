@@ -1,6 +1,8 @@
 package com.example.jamshidi15
 
+import android.app.Activity
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,7 +32,17 @@ class KtActivity1 : AppCompatActivity() {
             intent.putExtra("code", code)
             intent.putExtra("age", age)
             intent.putExtra("country", country)
-            startActivity(intent)
+            startActivityForResult(intent,150)
         })
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode ==150) {
+            if (resultCode == Activity.RESULT_OK){
+                val result=data?.getStringExtra("salam")
+                Toast.makeText(this,result,Toast.LENGTH_LONG).show()
+            }
+        }
     }
 }
