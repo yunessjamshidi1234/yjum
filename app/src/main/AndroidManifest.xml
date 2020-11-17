@@ -16,20 +16,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cameraActivity"></activity>
-        <activity android:name=".EmailActivity"></activity>
+        <activity android:name=".DiccriptActivity"></activity>
+        <activity android:name=".RecycleActivity">
+        </activity>
+        <activity android:name=".EmailActivity" />
         <activity android:name=".callActivity" />
         <activity android:name=".searshActivity" />
-        <activity android:name=".AccountActivity">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".AccountActivity" >
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-
         </activity>
-        <activity android:name=".KtActivity1" >
-         </activity>
+        <activity android:name=".KtActivity1" />
         <activity android:name=".MainActivity5" />
         <activity android:name=".KotlinActivity6" />
         <activity android:name=".MainActivity4" />

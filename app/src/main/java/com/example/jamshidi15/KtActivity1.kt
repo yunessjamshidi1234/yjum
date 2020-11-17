@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -21,17 +22,17 @@ class KtActivity1 : AppCompatActivity() {
         val edtCountry=findViewById<EditText>(R.id.country)
         val btnClick=findViewById<Button>(R.id.btnClick)
         btnClick.setOnClickListener(View.OnClickListener {
-            val intent: Intent = Intent(this, MainActivity5::class.java)
             val name = edtName.text.toString()
+            val prefences=PreferenceManager.getDefaultSharedPreferences(this).edit().putString("namesaved",name).apply()
             val fname = edtFname.text.toString()
+            val prefences1=PreferenceManager.getDefaultSharedPreferences(this).edit().putString("fnamesaved",fname).apply()
             val code = edtCode.text.toString()
+            val prefences2=PreferenceManager.getDefaultSharedPreferences(this).edit().putString("codesaved",code).apply()
             val age = edtAge.text.toString()
+            val prefences3=PreferenceManager.getDefaultSharedPreferences(this).edit().putString("agesaved",age).apply()
             val country = edtCountry.text.toString()
-            intent.putExtra("name", name)
-            intent.putExtra("fname", fname)
-            intent.putExtra("code", code)
-            intent.putExtra("age", age)
-            intent.putExtra("country", country)
+            val prefences4=PreferenceManager.getDefaultSharedPreferences(this).edit().putString("countrysaved",country).apply()
+            val intent: Intent = Intent(this, MainActivity5::class.java)
             startActivityForResult(intent,150)
         })
     }
