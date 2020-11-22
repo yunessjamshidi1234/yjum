@@ -21,6 +21,26 @@ class KtActivity1 : AppCompatActivity() {
         val edtAge=findViewById<EditText>(R.id.age)
         val edtCountry=findViewById<EditText>(R.id.country)
         val btnClick=findViewById<Button>(R.id.btnClick)
+        val btnSaveDB=findViewById<Button>(R.id.btnDatabase)
+        val btnshow=findViewById<Button>(R.id.showdatabase)
+        val btndelete=findViewById<Button>(R.id.Deletedata)
+
+        val  database =SQLiteHelper(this,"IsIranDB",null,1)
+
+        btnSaveDB.setOnClickListener {
+            database.InsertData(edtName.text.toString(),edtFname.text.toString(),edtCode.text.toString().toInt(),edtAge.text.toString().toInt(),edtCountry.text.toString())
+            Toast.makeText(this, "savedata", Toast.LENGTH_LONG).show()
+        }
+        btnshow.setOnClickListener{
+            val result =database.ReadTable()
+            Toast.makeText(this,result,Toast.LENGTH_LONG).show()
+        }
+        btndelete.setOnClickListener{
+            database.Deletetable(edtName.text.toString())
+            Toast.makeText(this,"Delete data from Database",Toast.LENGTH_LONG).show()
+        }
+
+
         btnClick.setOnClickListener(View.OnClickListener {
             val name = edtName.text.toString()
             val prefences=PreferenceManager.getDefaultSharedPreferences(this).edit().putString("namesaved",name).apply()
@@ -36,7 +56,6 @@ class KtActivity1 : AppCompatActivity() {
             startActivityForResult(intent,150)
         })
     }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode ==150) {
