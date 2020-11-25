@@ -117,7 +117,25 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/white"/>
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/btn_ogat"
+            android:layout_marginRight="15dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" اوقات شرعی"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:drawableRight="@drawable/sunset"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>

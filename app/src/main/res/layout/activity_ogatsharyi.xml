@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OgatsharyiActivity">
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Click"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#8BC34A"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/edt_city"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:hint="please enter a city"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:layout_marginStart="110dp"/>
+    <TextView
+        android:id="@+id/azan_sobh"
+        app:layout_constraintTop_toBottomOf="@id/btn_click"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:background="#30A6DC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="اذان صبح : "/>
+    <TextView
+        android:id="@+id/Sunrise"
+        app:layout_constraintTop_toBottomOf="@id/azan_sobh"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:background="#30A6DC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="طلوع آفتاب : "/>
+    <TextView
+        android:id="@+id/azan_zohr"
+        app:layout_constraintTop_toBottomOf="@id/Sunrise"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:background="#30A6DC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="اذان ظهر : "/>
+    <TextView
+        android:id="@+id/Sunset"
+        app:layout_constraintTop_toBottomOf="@id/azan_zohr"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:background="#30A6DC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="غروب آفتاب : "/>
+    <TextView
+        android:id="@+id/asan_maghreb"
+        app:layout_constraintTop_toBottomOf="@id/Sunset"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:background="#30A6DC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="اذان مغرب : "/>
+    <TextView
+        android:id="@+id/Midnight"
+        app:layout_constraintTop_toBottomOf="@id/asan_maghreb"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:background="#30A6DC"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="نیمه شب شرعی : "/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

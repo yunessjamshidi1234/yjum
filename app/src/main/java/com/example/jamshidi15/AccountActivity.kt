@@ -21,6 +21,7 @@ class AccountActivity : AppCompatActivity() {
         val btnprofile=findViewById<TextView>(R.id.btn_Profile)
         val drawer=findViewById<DrawerLayout>(R.id.drawer)
         val btncamera = findViewById<TextView>(R.id.btn_camera)
+        val btnTime =findViewById<TextView>(R.id.btn_ogat)
         btnDrawer.setOnClickListener(View.OnClickListener {
              drawer.openDrawer(GravityCompat.END)
         })
@@ -37,11 +38,15 @@ class AccountActivity : AppCompatActivity() {
             startActivity(intent3)
         })
         btnprofile.setOnClickListener(View.OnClickListener {
-            val intent3:Intent=Intent(this,KtActivity1::class.java)
-            startActivity(intent3)
+            val intent4:Intent=Intent(this,KtActivity1::class.java)
+            startActivity(intent4)
         })
 
         btncamera.setOnClickListener(View.OnClickListener {
+        })
+        btnTime.setOnClickListener(View.OnClickListener {
+            val intent5:Intent=Intent(this,OgatsharyiActivity::class.java)
+            startActivity(intent5)
         })
 
     }

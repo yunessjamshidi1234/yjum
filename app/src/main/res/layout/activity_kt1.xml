@@ -19,6 +19,7 @@
         android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:hint="please enter your name"
         android:textColorHint="@color/white"
         android:layout_marginHorizontal="20dp"
@@ -30,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:hint="please enter your  lastname"
         android:layout_marginHorizontal="20dp"
         android:gravity="center"/>
@@ -39,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:hint="please enter your National Code"
         android:layout_marginHorizontal="20dp"
         android:gravity="center"/>
@@ -49,6 +52,7 @@
         android:layout_height="wrap_content"
         android:hint="please enter your  age"
         android:layout_marginHorizontal="20dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:gravity="center"/>
     <EditText
@@ -57,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:hint="please enter your job"
         android:layout_marginHorizontal="20dp"
         android:gravity="center"/>
