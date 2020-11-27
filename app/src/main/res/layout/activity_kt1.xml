@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".KtActivity1"
-    android:background="#81BAA8">
+    android:background="#7471A4E3">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:layout_marginTop="20dp"
         android:text="click"
         android:textColor="#ffff"
-        android:background="#4CAF50"
+        android:background="@drawable/shape1"
         android:gravity="center"/>
     <Button
         android:id="@+id/btnDatabase"
@@ -82,8 +82,9 @@
         android:paddingHorizontal="20dp"
         android:text="save into the data base"
         android:textColor="#ffff"
-        android:background="#4CAF50"
-        android:gravity="center"/>
+        android:background="@drawable/shape1"
+        android:gravity="center"
+        />
     <Button
         android:id="@+id/showdatabase"
         android:layout_width="wrap_content"
@@ -92,7 +93,7 @@
         android:paddingHorizontal="20dp"
         android:text="show the data base"
         android:textColor="#ffff"
-        android:background="#4CAF50"
+        android:background="@drawable/shape1"
         android:gravity="center"/>
     <Button
         android:id="@+id/Deletedata"
@@ -102,7 +103,7 @@
         android:paddingHorizontal="20dp"
         android:text="Delete the data base"
         android:textColor="#ffff"
-        android:background="#4CAF50"
+        android:background="@drawable/shape1"
         android:gravity="center"/>
 
 

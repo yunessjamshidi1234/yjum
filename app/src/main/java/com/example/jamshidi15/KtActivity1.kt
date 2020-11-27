@@ -1,6 +1,7 @@
 package com.example.jamshidi15
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
@@ -28,8 +29,17 @@ class KtActivity1 : AppCompatActivity() {
         val  database =SQLiteHelper(this,"IsIranDB",null,1)
 
         btnSaveDB.setOnClickListener {
-            database.InsertData(edtName.text.toString(),edtFname.text.toString(),edtCode.text.toString().toInt(),edtAge.text.toString().toInt(),edtCountry.text.toString())
-            Toast.makeText(this, "savedata", Toast.LENGTH_LONG).show()
+            val dialog=AlertDialog.Builder(this)
+                    .setTitle("Attention")
+                    .setMessage("Are you sure")
+                    .setPositiveButton("yes"){
+                        dialog,which ->database.InsertData(edtName.text.toString(),edtFname.text.toString(),edtCode.text.toString().toInt(),edtAge.text.toString().toInt(),edtCountry.text.toString())
+                        Toast.makeText(this, "save data!!!", Toast.LENGTH_LONG).show()
+                    }
+                    .setNegativeButton("no"){
+                        dialog,which->Toast.makeText(this, "Dont save data!!!", Toast.LENGTH_LONG).show()
+                    }.create()
+            dialog.show()
         }
         btnshow.setOnClickListener{
             val result =database.ReadTable()
